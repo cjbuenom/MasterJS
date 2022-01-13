@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>PlaytoEarn</title>
+</head>
+<body>
+    <div> 
+        <form id="Form-Login" action=""> 
+    
+        <!-- <div id="Form-Login"> -->
+            <div>            
+                <h1>Mundo Azar</h1>
+                <h2>Login</h2>
+                <div class="inputsLogin">
+                    <div>
+                        <label for="">Usuario : </label>
+                        <input id="txtInputUser" placeholder="Ingresa Usuario">
+                        <div class="notificaValidacionUser">
+    
+                        </div>
+                    </div> 
+                    
+
+                    <div> 
+                        <label for="">Contraseña:</label>
+                        <input id="txtInputPass" placeholder="Ingresa Contraseña" >
+                        <div class="notificaValidacionPass">
+
+                        </div>
+                    </div>
+                    
+                </div>
+                <input id="btnIngresar" type="button" value="Ingresar">
+                <div>
+                    <h3>  Usuario:Contraseña Default</h3>
+                    <h3> JavaScript:Master   </h3>
+                </div>
+                
+            </div>
+        
+        </form>
+    </div>
+
+    <div id="Form-game">
+        <div>
+            <button id= "btnComenzar" class="btnComenzarNODisponible" disabled> Comenzar</button>
+        </div> 
+        <div class="section-Game">
+                       
+            <div class="opcionPlayer">
+                    <!-- <img class="img-seleccionada" src="./img/incognita.png" alt="Opcion Seleccionada por jugador"> -->
+
+                    <input class="img-seleccionada" type="image" value="" src="./img/incognita.png">
+                    <p class="opcionPlayer-area">Opcion Seleccionada por jugador</p>
+            </div> 
+            <div class="opcionPlayerIA">
+                <!-- <img class="img-seleccionadaIA" src="./img/incognita.png" alt="Opcion Seleccionada por IA"> -->
+                <input class="img-seleccionadaIA" type="image" value="" src="./img/incognita.png">
+                <p class="opcionPlayerIA-area">Opcion Seleccionada por IA</p>
+            </div> 
+            <div class="tablePointsResults">
+                <p class="results-area">Resultados 10 rondas de Juego</p>
+                <div>
+                    <ul class="list-points">
+                        <li class="fila"></li>
+                        <li class="fila"></li>
+                        <li class="fila"></li>
+                        <li class="fila"></li>
+                        <li class="fila"></li>
+                        <li class="fila"></li>
+                        <li class="fila"></li>
+                        <li class="fila"></li>
+                        <li class="fila"></li>
+                        <li class="fila"></li> 
+                    </ul>
+                </div>
+
+                <div>
+                    <p>Total Puntos</p>
+                </div>
+                <div >              
+                   <a class="totalPuntos" ></a>
+                </div>            
+                <div>
+                    <p>Ronda Número :</p>
+                </div>
+                <div > 
+                <a class="roundCurrent"></a>
+                   
+                </div>
+
+            </div> 
+        </div>
+        
+        <div class="opcionsPlayer">            
+            <div>
+                <p class="lblSeleccione">Seleccione:</p>
+            </div>
+            <div>
+                <input class="opcion1" type="image" value="Piedra" src="./img/piedra.png">
+            </div>
+            <div>
+                <input class="opcion2" type="image" value="Papel" src="./img/papel.png">
+            </div>
+           <div>
+                <input class="opcion3" type="image" value="Tijera" src="./img/tijera.png">
+           </div>
+           
+            
+        </div>
+        
+        <div class="OpcionesJuego">
+            <div>
+                <button id="bntCerrar" >Cerrar Sesion</button>
+             </div>
+        </div>
+
+        <div class="opcionsPlayer">
+            <div>
+                <p>Ultimos 5 Puntajes de Juego</p>
+            
+            <ul class="list-points">
+                <li class="juego">1° Juego :</li>
+                <li class="juego">2° Juego :</li>
+                <li class="juego">3° Juego :</li>
+                <li class="juego">4° Juego :</li>
+                <li class="juego">5° Juego :</li>
+            </ul>
+            </div>
+        </div>
+
+    </div>
+    
+
+ 
+
+    <div id="myModalComentarios" class="modal">
+        
+                 <div id="spinnerLoading" class="loader"></div>
+     </div>
+     
+     <footer class="contenedor-Footer-Principal">
+        <h1 class="footer-section">Proyecto final JavaScript - Cristian bueno 2022 - Scalab Academy </h1>
+    </footer>
+
+    <script src="./js/script.js"></script>
+    
+</body>
+</html>
